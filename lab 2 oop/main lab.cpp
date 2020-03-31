@@ -37,13 +37,13 @@ int main()
 		std::cout << v[i].getReal() << " " << v[i].getComplex() << ",";
 		suma = suma.add(v[i]);
 	}
-	std::cout << " suma este:" << suma.getReal() << " " << suma.getComplex << " " << std::endl;
+	std::cout << " suma este:" << suma.getReal() << " " << suma.getComplex()<< " " << std::endl;
 
 	//teste
 	assert(a.abs() == sqrt(5));
-	assert(a.polarform().getReal == sqrt(5) * cos(atan(2)));
+	assert(a.polarform().getReal() == sqrt(5) * cos(atan(2)));
 
-	std::cout << res.getReal() << " " << res.getComplex << " " << "i";
+	std::cout << res.getReal() << " " << res.getComplex() << " " << "i";
 	std::cout << std::endl << a.abs();
 }
 

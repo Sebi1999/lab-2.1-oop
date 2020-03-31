@@ -65,7 +65,7 @@ Complex Complex::polarform()
 {
 	Complex rez = Complex();
 	double radius = abs();
-	double theta = atg(getComplex() / getReal());
+	double theta = atan(getComplex() / getReal());
 	rez.setRealpart(radius * cos(theta));
 	rez.setComplexpart(radius * sin(theta));
 	return rez;
